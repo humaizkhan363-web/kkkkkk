@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Array Print Example</h2>
+  <p id="output"></p>
+
+  <script>
+    let fruits = ["Apple", "Banana", "Mango"];   
+    let marks = [90, 85, 70];                     
+    let random = ["Zee", 25, true];              
+    let matrix = [[1, 2], [3, 4]];           
+    let users = [{ name: "Ali" }, { name: "Zee" }]; 
+
+
+    
+    let result = "";
+
+    result += "Fruits: " + fruits + "<br>";
+    result += "Marks: " + marks + "<br>";
+    result += "Random: " + random + "<br>";
+    result += "Matrix: " + matrix + "<br>";
+    result += "Users: " + JSON.stringify(users) + "<br>";
+
+    document.getElementById("output").innerHTML = result;
+  </script>
+</body>
+</html>
